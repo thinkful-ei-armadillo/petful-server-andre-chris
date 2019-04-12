@@ -52,7 +52,7 @@ function startCatInterval(){
     else {
       clearInterval(catTimer);
     } 
-  }, 20000); 
+  }, 3000); 
 }
 
 function startDogInterval() { 
@@ -65,7 +65,7 @@ function startDogInterval() {
     else {
       clearInterval(dogTimer);
     } 
-  }, 20000); 
+  }, 3000); 
 }
 
 
