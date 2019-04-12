@@ -45,27 +45,29 @@ let dogTimer;
 function startCatInterval(){
   catTimer = setInterval(() => {
     if( catsQueue.first !== null) {
-      if(catsQueue.first.value.adopted !== ''){
-        catsQueue.dequeue();
-      } 
+      catsQueue.dequeue();
     }
+    else if(catsQueue.first.value.adopted !== ''){
+      catsQueue.dequeue();
+    } 
     else {
       clearInterval(catTimer);
     } 
-  }, 30000); 
+  }, 5000); 
 }
 
 function startDogInterval() { 
   dogTimer = setInterval(() => {
     if(dogsQueue.first !== null) {
-      if(dogsQueue.first.value.adopted !== ''){
-        dogsQueue.dequeue(); 
-      }
+      dogsQueue.dequeue();
     } 
+    else if(dogsQueue.first.value.adopted !== ''){
+      dogsQueue.dequeue();   
+    }
     else {
       clearInterval(dogTimer);
     } 
-  }, 30000); 
+  }, 5000); 
 }
 
 
