@@ -45,7 +45,7 @@ let dogTimer;
 function startCatInterval(){
   catTimer = setInterval(() => {
     if( catsQueue.first !== null) {
-      if(catsQueue.first !== ''){
+      if(catsQueue.first.value.adopted !== ''){
         catsQueue.dequeue();
       } 
     }
@@ -58,7 +58,7 @@ function startCatInterval(){
 function startDogInterval() { 
   dogTimer = setInterval(() => {
     if(dogsQueue.first !== null) {
-      if(dogsQueue.first !== ''){
+      if(dogsQueue.first.value.adopted !== ''){
         dogsQueue.dequeue(); 
       }
     } 
