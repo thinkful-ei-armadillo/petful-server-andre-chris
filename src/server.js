@@ -39,37 +39,45 @@ function display(s){
   return sArr;
 }
 
-const catTimer = setInterval(() => {
-  if( catsQueue.first !== null) {
-    if(catsQueue.first !== ''){
-      catsQueue.dequeue();
-    } 
-  }
-  else {
-    clearInterval(catTimer);
-  } 
-},5000); 
+let catTimer;
+let dogTimer; 
 
-const dogTimer = setInterval(() => {
-  if(dogsQueue.first !== null) {
-    if(dogsQueue.first !== ''){
-      dogsQueue.dequeue(); 
+function startCatInterval(){
+  catTimer = setInterval(() => {
+    if( catsQueue.first !== null) {
+      if(catsQueue.first !== ''){
+        catsQueue.dequeue();
+      } 
     }
-  } 
-  else {
-    clearInterval(dogTimer);
-  } 
-},5000); 
+    else {
+      clearInterval(catTimer);
+    } 
+  }, 5000); 
+}
 
+function startDogInterval() { 
+  dogTimer = setInterval(() => {
+    if(dogsQueue.first !== null) {
+      if(dogsQueue.first !== ''){
+        dogsQueue.dequeue(); 
+      }
+    } 
+    else {
+      clearInterval(dogTimer);
+    } 
+  }, 5000); 
+}
 
 
 app.route('/api/cats')
   .get((req, res, next) => {
+    startCatInterval(); 
     res.status(200).json(display(catsQueue)); 
   });
 
 app.route('/api/dogs')
   .get((req, res, next) => {
+    startDogInterval(); 
     res.status(200).json(display(dogsQueue)); 
   }); 
 
