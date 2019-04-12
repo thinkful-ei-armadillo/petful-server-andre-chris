@@ -45,11 +45,10 @@ let dogTimer;
 function startCatInterval(){
   catTimer = setInterval(() => {
     if( catsQueue.first !== null) {
-      catsQueue.dequeue();
+      if(catsQueue.first.value.adopted !== ''){
+        catsQueue.dequeue();
+      } 
     }
-    else if(catsQueue.first.value.adopted !== ''){
-      catsQueue.dequeue();
-    } 
     else {
       clearInterval(catTimer);
     } 
@@ -59,11 +58,10 @@ function startCatInterval(){
 function startDogInterval() { 
   dogTimer = setInterval(() => {
     if(dogsQueue.first !== null) {
-      dogsQueue.dequeue();
+      if(dogsQueue.first.value.adopted !== ''){
+        dogsQueue.dequeue(); 
+      }
     } 
-    else if(dogsQueue.first.value.adopted !== ''){
-      dogsQueue.dequeue();   
-    }
     else {
       clearInterval(dogTimer);
     } 
