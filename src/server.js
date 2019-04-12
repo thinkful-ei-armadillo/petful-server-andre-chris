@@ -71,13 +71,13 @@ function startDogInterval() {
 
 app.route('/api/cats')
   .get((req, res, next) => {
-    startCatInterval(); 
+    // startCatInterval(); 
     res.status(200).json(display(catsQueue)); 
   });
 
 app.route('/api/dogs')
   .get((req, res, next) => {
-    startDogInterval(); 
+    // startDogInterval(); 
     res.status(200).json(display(dogsQueue)); 
   }); 
 
