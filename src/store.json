@@ -1,0 +1,78 @@
+  {"cats": 
+    [
+      { 
+        "imageURL": "https://assets3.thrillist.com/v1/image/2622128/size/tmg-slideshow_l.jpg", 
+        "imageDescription": "Orange bengal cat with black stripes lounging on concrete.",
+        "name": "Fluffy",
+        "sex": "Female",
+        "age": "2",
+        "breed": "Bengal",
+        "story": "Thrown on the street", 
+        "adopted": ""
+      },
+      {
+        "imageURL": "https://www.prestigeanimalhospital.com/sites/default/files/styles/large/adaptive-image/public/sphynx-cat-breed-info.jpg?itok=cn-84l5R", 
+        "imageDescription": "Green and blue eyed sphynx perched on a window sill",
+        "name": "Poofy",
+        "sex": "Female",
+        "age": "8",
+        "breed": "Sphynx",
+        "story": "Attacked the baby", 
+        "adopted": "Andre"
+      },
+      {
+        "imageURL": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/42136708/4/?bust=1531188477", 
+        "imageDescription": "Orange, black and white clalico cat staring off into the distance",
+        "name": "Nappy",
+        "sex": "Female",
+        "age": "6",
+        "breed": "Calico",
+        "story": "Used the dog as a hat", 
+        "adopted": "Chris"
+      }
+
+    ],
+    "dogs": 
+    [
+      {
+        "imageURL": "http://www.dogster.com/wp-content/uploads/2015/05/Cute%20dog%20listening%20to%20music%201_1.jpg",
+        "imageDescription": "A smiling golden-brown golden retreiver listening to music.",
+        "name": "Zeus",
+        "sex": "Male",
+        "age": "3",
+        "breed": "Golden Retriever",
+        "story": "Owner Passed away", 
+        "adopted": ""
+      }, 
+      {
+        "imageURL": "http://cdn.akc.org/content/hero/gsd_header_.jpg?cachebuster:56",
+        "imageDescription": "Brown and black german shepherd with a tennis ball in his mouth.",
+        "name": "Poseidon",
+        "sex": "Male",
+        "age": "2",
+        "breed": "German Shepherd",
+        "story": "Broke the Roomba", 
+        "adopted": "Andre"
+      },
+      {
+        "imageURL": "https://1djbcc27ketw16uuv6g8izdk-wpengine.netdna-ssl.com/wp-content/uploads/2017/08/yorkshire-terrier-768x432.jpg",
+        "imageDescription": "A panting golden and gray Yorkie in a field",
+        "name": "Hades",
+        "sex": "Male",
+        "age": "5",
+        "breed": "Yorkshire Terrier",
+        "story": "Threw up in the laundry basket", 
+        "adopted": "Chris"
+      }
+
+    ],
+    "users": [
+      {
+        "name": "Chris"  
+      },
+
+      {
+        "name": "Andre"
+      }
+    ]
+  }

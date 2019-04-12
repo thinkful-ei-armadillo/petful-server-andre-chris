@@ -1,0 +1,22 @@
+{
+  "name": "petful.server",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "Alex Cumbo",
+  "license": "UNLICENSED",
+  "main": "server.js",
+  "engines": {
+    "node": "11.10.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./src/server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "faker": "^4.1.0",
+    "nodemon": "^1.18.11"
+  }
+}
