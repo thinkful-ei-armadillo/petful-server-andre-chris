@@ -89,14 +89,14 @@ app.route('/api/users')
 app.route('/api/cats/:name')
   .patch(jsonParser, (req, res, next) => {
     const { adopted } = req.body;
-    catsQueue.value.adpoted = adopted;
+    catsQueue.first.value.adopted = adopted;
     res.status(204).end();  
   }); 
 
 app.route('/api/dogs/:name')
   .patch(jsonParser, (req, res, next) => {
     const { adopted } = req.body; 
-    dogsQueue.value.adopted = adopted;
+    dogsQueue.first.value.adopted = adopted;
     
     res.status(204).end();  
   });
